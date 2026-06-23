@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Антистресс-навигатор | Подросток в ЧС</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- НАВИГАЦИЯ -->
+    <!-- ОЛЕСЯ ЛОШАРА -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-heartbeat"></i>
+                <span>Антистресс-навигатор</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Главная</a></li>
+                    <li><a href="#emergency" class="nav-link">ЧС</a></li>
+                    <li><a href="#practices" class="nav-link">Практики</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                    <li><a href="#plan" class="nav-link">Мой план</a></li>
+                    <li><a href="#test" class="nav-link">Тест</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ГЛАВНАЯ СЕКЦИЯ -->
+        <section id="home" class="section hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1>Антистресс-навигатор для подростка</h1>
+                    <p>В чрезвычайных ситуациях важно сохранять спокойствие и действовать чётко. Этот навигатор поможет тебе справиться со стрессом, узнать порядок действий и подготовиться к разным ситуациям.</p>
+                    <a href="#emergency" class="btn btn-primary">Узнать о ЧС</a>
+                    <a href="#practices" class="btn btn-outline">Антистресс-практики</a>
+                </div>
+                <div class="hero-image">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- ЧС -->
+        <section id="emergency" class="section">
+            <div class="container">
+                <h2 class="section-title">Чрезвычайные ситуации</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <i class="fas fa-water card-icon"></i>
+                        <h3>Наводнение</h3>
+                        <ul>
+                            <li>Поднимись на верхние этажи</li>
+                            <li>Отключи электричество и газ</li>
+                            <li>Возьми документы, тёплые вещи, еду</li>
+                            <li>Жди спасателей</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-fire card-icon"></i>
+                        <h3>Пожар</h3>
+                        <ul>
+                            <li>Немедленно покинь здание</li>
+                            <li>Дыши через мокрую ткань</li>
+                            <li>Не пользуйся лифтом</li>
+                            <li>Звони 101</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-dragon card-icon"></i>
+                        <h3>Атака БПЛА</h3>
+                        <ul>
+                            <li>Спустись в укрытие</li>
+                            <li>Не подходи к окнам</li>
+                            <li>Правило двух стен</li>
+                            <li>Жди сигнала отбоя</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-mountain card-icon"></i>
+                        <h3>Землетрясение</h3>
+                        <ul>
+                            <li>Встань в дверной проём</li>
+                            <li>Не выбегай на лестницу</li>
+                            <li>Держись подальше от стекол</li>
+                            <li>После толчков выходи на улицу</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- АНТИСТРЕСС ПРАКТИКИ -->
+        <section id="practices" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Антистресс-практики</h2>
+                <div class="practices-grid">
+                    <div class="practice-card">
+                        <h3>Дыхание по квадрату</h3>
+                        <p>Вдох (4 сек) — Задержка (4 сек) — Выдох (4 сек) — Задержка (4 сек). Повтори 5 раз.</p>
+                        <button class="btn btn-small btn-primary" id="startBreathing">Запустить таймер</button>
+                        <div id="breathingTimer" class="timer-display"></div>
+                    </div>
+                    <div class="practice-card">
+                        <h3>Метод заземления 5-4-3-2-1</h3>
+                        <p>Найди 5 вещей, которые видишь, 4 — до которых можешь дотронуться, 3 — слышишь, 2 — можешь понюхать, 1 — можешь попробовать.</p>
+                    </div>
+                    <div class="practice-card">
+                        <h3>Мышечная релаксация</h3>
+                        <p>Напряги мышцы ног на 5 секунд, затем расслабь. Поднимайся выше: живот, грудь, руки, плечи, лицо.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- КОНТАКТЫ ЭКСТРЕННЫХ СЛУЖБ -->
+        <section id="contacts" class="section">
+            <div class="container">
+                <h2 class="section-title">Экстренные контакты</h2>
+                <div class="contacts-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>112</span>
+                        <p>Единый номер спасения</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-fire-extinguisher"></i>
+                        <span>101</span>
+                        <p>Пожарная охрана</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-ambulance"></i>
+                        <span>103</span>
+                        <p>Скорая помощь</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-shield-virus"></i>
+                        <span>102</span>
+                        <p>Полиция</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-smile"></i>
+                        <span>8-800-200-01-22</span>
+                        <p>Детский телефон доверия</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- МОЙ ПЛАН ДЕЙСТВИЙ -->
+        <section id="plan" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Мой план подготовки</h2>
+                <p class="section-description">Отметь, что уже сделано. Список сохранится в твоём браузере.</p>
+                <ul class="checklist" id="checklist">
+                    <li><label><input type="checkbox" class="check-item"> Собрать тревожный чемоданчик (документы, вода, еда, фонарик, аптечка)</label></li>
+                    <li><label><input type="checkbox" class="check-item"> Изучить план эвакуации дома и в школе</label></li>
+                    <li><label><input type="checkbox" class="check-item"> Заряжать power bank и телефон всегда</label></li>
+                    <li><label><input type="checkbox" class="check-item"> Знать номера экстренных служб наизусть</label></li>
+                    <li><label><input type="checkbox" class="check-item"> Договориться с семьёй о месте встречи</label></li>
+                    <li><label><input type="checkbox" class="check-item"> Научиться делать дыхательные упражнения</label></li>
+                </ul>
+                <button class="btn btn-small btn-outline" id="resetChecklist">Сбросить список</button>
+            </div>
+        </section>
+
+        <!-- ТЕСТ НА УРОВЕНЬ СТРЕССА -->
+        <section id="test" class="section">
+            <div class="container">
+                <h2 class="section-title">Тест: уровень стресса</h2>
+                <p class="section-description">Ответь на вопросы, чтобы понять своё состояние и получить рекомендацию.</p>
+                <form id="stressTest">
+                    <div class="question">
+                        <p>1. Как часто ты чувствуешь тревогу без видимой причины?</p>
+                        <label><input type="radio" name="q1" value="0"> Редко</label>
+                        <label><input type="radio" name="q1" value="1"> Иногда</label>
+                        <label><input type="radio" name="q1" value="2"> Часто</label>
+                    </div>
+                    <div class="question">
+                        <p>2. Бывают ли у тебя проблемы со сном из-за переживаний?</p>
+                        <label><input type="radio" name="q2" value="0"> Почти никогда</label>
+                        <label><input type="radio" name="q2" value="1"> Иногда</label>
+                        <label><input type="radio" name="q2" value="2"> Почти каждую ночь</label>
+                    </div>
+                    <div class="question">
+                        <p>3. Легко ли тебя напугать громкими звуками или неожиданностями?</p>
+                        <label><input type="radio" name="q3" value="0"> Нет</label>
+                        <label><input type="radio" name="q3" value="1"> Иногда</label>
+                        <label><input type="radio" name="q3" value="2"> Да</label>
+                    </div>
+                    <div class="question">
+                        <p>4. Чувствуешь ли ты напряжение в теле (головные боли, зажимы)?</p>
+                        <label><input type="radio" name="q4" value="0"> Нет</label>
+                        <label><input type="radio" name="q4" value="1"> Иногда</label>
+                        <label><input type="radio" name="q4" value="2"> Часто</label>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="submitTest">Узнать результат</button>
+                </form>
+                <div id="testResult" class="result-box"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Антистресс-навигатор для подростка в ЧС | Школьный проект</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
